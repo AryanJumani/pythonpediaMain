@@ -1,0 +1,128 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+<title>Strings</title>
+<link href="stylesheet.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+	<div class="upper-index">
+	    <span class="logo" style="width: 50%; display: inline; align-items: center; margin-left: 5px"><img src="logo.png" width="50px" style="margin-top: 5px"></span>
+	    <span class="upper-index-all-hrefs"><a href="CodingForBeginners.html" class="upper-index-a">Home</a><a href="contact.html" class="upper-index-a">Contact</a><a href="forums.php" class="upper-index-a">Forums</a><a href="login.php" class="upper-index-a btn btn-primary" style="background-color: #0cf">Login</a><a href="registration.php" class="upper-index-a btn btn-primary" style="background-color: #fff; color: #008fb3">Register</a></span>
+	</div>
+<div class="left-index"><a class="left-index-a" href="Intro_to_python.html">Intro to python</a><br><a class="left-index-a" href="Python.html">Get started</a><br><a class="left-index-a" href="Comments.html">Comments</a><br><a class="left-index-a" href="Variabes.html">Data types and Variables</a><br><a class="left-index-a" href="input.html">Input</a><br><a class="left-index-a" href="numbers.html">Numbers</a><br><a class="left-index-a" href="strings.html">Strings</a><br><a class="left-index-a" href="boolean.html">Boolean</a><br><a class="left-index-a" href="">Operators(Soon)</a><br><a class="left-index-a" href="if-statement.html">If statements</a><br><a class="left-index-a" href="lists.html">Lists</a><br><a class="left-index-a" href="tuples.html">Tuples</a><br><a class="left-index-a" href="sets.html">Sets</a><br><a class="left-index-a" href="">Dictionaries(soon)</a><br><a class="left-index-a" href="while_loop.html">While loop</a><br><a class="left-index-a" href="for_loop.html">For loop</a><br><a class="left-index-a" href="functions.html">Functions</a><br><a class="left-index-a" href="">Classes/Objects(Soon)</a><br><a class="left-index-a" href="">Inheritance(Soon)</a><br><a class="left-index-a" href="">Scope(Soon)</a><br><a class="left-index-a" href="">Try-except(Soon)</a><br><br></div>
+
+<h1>Strings</h1>
+<p>Strings, as said earlier, is any alphanumeric letter. <br>In python, it is represented within 2 double quotations(" and ") or 2 single quotations(' and ')
+<br><span class="highlight snippet-text">"string"</span> is the same as
+<span class="highlight snippet-text">'string'</span>.
+</p>
+<div class="example"><h1>Example</h1><span class="snippet">
+	<span class="snippet-keyword">print</span>(<span class="snippet-text">"string"</span>)<br><span class="snippet-keyword">print</span>(<span class="snippet-text">'string'</span>)<br>
+	<span class="snippet-keyword">print</span>(<span class="snippet-keyword">type</span>(<span class="snippet-text">"string"</span>))<br>
+	<span class="snippet-keyword">print</span>(<span class="snippet-keyword">type</span>(<span class="snippet-text">'string'</span>))</span>
+<div class="container"><a href="https://trinket.io/python/ee4a738128?showInstructions=true" target="_blank" class="button">Try it out!</a></div></div>
+
+<h1>Multiline strings</h1>
+<p>Strings can extend to several lines. However, you cannot use 2 double or single quotations to define it.<br>To tell the computer that there is a multiline string, use 3 double or single quotations.</p>
+<div class="example"><h1>Example</h1><span class="snippet">
+	s = <span class="snippet-text">"""This is a<br>multi-line string."""</span><br>
+	<span class="snippet-keyword">print</span>(s)</span>
+<div class="container"><a href="https://trinket.io/python/adb7faf2d6?showInstructions=true" target="_blank" class="button">Try it out!</a></div></div>
+
+<h1>String Slicing</h1>
+<p>Strings are arrays. To access a paarticular character in the string, we use square brackets. <br>This is known as String Slicing.</p>
+<div class="example"><h1>Example</h1><span class="snippet">
+	s = <span class="snippet-text">"Hello World"</span><br>
+	<span class="snippet-keyword">print</span>(s[<span class="snippet-number">1</span>])</span>
+<div class="container"><a href="https://trinket.io/python/1c7cacec40?showInstructions=true" target="_blank" class="button">Try it out!</a></div></div>
+
+<div class="note" style="padding:10px">
+<h1 style="display:inline; margin-bottom:0px">Note</h1>
+<button type="button" onclick="enlarge('enlarger', this.firstChild)" style="border-style: none; border-color: inherit; border-width: 0; background: transparent; display:inline-block; width: 40px; float:right"><img src="down_arrow.png" alt="Enlarge and Capsize Note" height="30px"></button>
+
+<div id="enlarger" style="display:none">
+
+<div class="note-text">To learn more about String Slicing, refer to <a href="lists.html" style="text-decoration:none">List Indexing.</a> <br> They are similar except for the fact that list items are separated by commas.</div></div></div>
+
+<h1>Upper Case</h1>
+<p>To get the entire string into upper case, use the <span class="highlight">upper()</span> method.</p>
+<div class="example"><h1>Example</h1><span class="snippet">
+	s = <span class="snippet-text">"Hello World"</span><br>
+	<span class="snippet-keyword">print</span>(s.upper())</span>
+<div class="container"><a href="https://trinket.io/python/998b8d6a19?showInstructions=true" target="_blank" class="button">Try it out!</a></div></div>
+
+<h1>Lower Case</h1>
+<p>To get the entire string into lower case, use the <span class="highlight">lower()</span> method.</p>
+<div class="example"><h1>Example</h1><span class="snippet">
+	s = <span class="snippet-text">"Hello World"</span><br>
+	<span class="snippet-keyword">print</span>(s.lower())</span>
+<div class="container"><a href="https://trinket.io/python/0ec00b6f31?showInstructions=true" target="_blank" class="button">Try it out!</a></div></div>
+
+<h1>Remove Whitespaces</h1>
+<p>To remove whitespaces( ) from the beginning or end of the string, use the <span class="highlight">strip()</span> method.</p>
+<div class="example"><h1>Example</h1><span class="snippet">
+	s = <span class="snippet-text">" Hello World&nbsp; ! "</span><br>
+	<span class="snippet-keyword">print</span>(s.strip())
+	<span class="snippet-text">#Returns "Hello World&nbsp; !"</span></span>
+<div class="container"><a href="https://trinket.io/python/ce4a1f9870?showInstructions=true" target="_blank" class="button">Try it out!</a></div></div>
+
+<h1>Replace strings</h1>
+<p>You can replace a string with another string using the <span class="highlight">replace()</span> method.<br>It takes two arguments, the first is the string which needs to be replaced and the second is the new string.</p>
+<div class="example"><h1>Example</h1><span class="snippet">
+	s = <span class="snippet-text">"Hello World!"</span><br>
+	<span class="snippet-keyword">print</span>(s.replace(<span class="snippet-text">"Hello"</span>,
+	<span class="snippet-text">"Bye"</span>))</span>
+<div class="container"><a href="https://trinket.io/python/dca3df0a98?showInstructions=true" target="_blank" class="button">Try it out!</a></div></div>
+
+<h1>String split</h1>
+<p>To separate a string based on a certain character, use the <span class="highlight">split()</span> method.<br>It will return it as a list.</p>
+<div class="example"><h1>Example</h1><span class="snippet">
+	s = <span class="snippet-text">"Hello, World!"</span><br>
+	<span class="snippet-keyword">print</span>(s.split(<span class="snippet-text">","</span>))
+	<span class="snippet-text">#Returns ['Hello', 'World!']</span></span>
+<div class="container"><a href="https://trinket.io/python/084c06de05?showInstructions=true" target="_blank" class="button">Try it out!</a></div></div>
+
+<h1>String concatenation</h1>
+<p>You can combine two different strings using the + operator.</p>
+<div class="example"><h1>Example</h1><span class="snippet">
+	a = <span class="snippet-text">"Hello"</span><br>b =
+	<span class="snippet-text">"World!"</span><br>c = <span class="snippet-text">
+	"This is string concatenation"</span><br>
+	<span class="snippet-keyword">print</span>(a + <span class="snippet-text">"
+	"</span> + b + <span class="snippet-text">" "</span> + c +
+	<span class="snippet-text">"!"</span>)</span>
+<div class="container"><a href="https://trinket.io/python/c26f8e24ad?showInstructions=true" target="_blank" class="button">Try it out!</a></div></div>
+
+<h1>Join method</h1>
+<p>To add a certain string between any iterable(list, tuple, dictionary keys) and convert the iterable into a string, use the <span class="highlight">join()</span> method.</p>
+<div class="example"><h1>Example</h1><span class="snippet">
+	&nbsp;theList = [<span class="snippet-text">"Join"</span>,
+	<span class="snippet-text">"this"</span>, <span class="snippet-text">"list"</span>,
+	<span class="snippet-text">"with"</span>, <span class="snippet-text">"a"</span>,
+	<span class="snippet-text">"dash"</span>]<br>s = <span class="snippet-text">
+	"-"</span>.join(theList)<br><span class="snippet-keyword">print</span>(s)</span>
+<div class="container"><a href="https://trinket.io/python/fb9690988f?showInstructions=true" target="_blank" class="button">Try it out!</a></div></div>
+
+
+<script type="text/javascript">
+function enlarge(elmnt, imgTag) {
+	var x = document.getElementById(elmnt);
+	if (x.style.display === "none") {
+
+		x.style.display = "block";
+		imgTag.src = "up_arrow.png";
+  	}
+  	else{
+
+  		x.style.display = "none";
+  		imgTag.src = "down_arrow.png";
+  	}
+}
+</script>
+
+</body>
+
+</html>

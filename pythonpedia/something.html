@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+<title>Classes</title>
+
+<link href="stylesheet.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<body>
+	<div class="upper-index">
+	    <span class="logo" style="width: 50%; display: inline; align-items: center; margin-left: 5px"><img src="logo.png" width="50px" style="margin-top: 5px"></span>
+	    <span class="upper-index-all-hrefs"><a href="CodingForBeginners.html" class="upper-index-a">Home</a><a href="contact.html" class="upper-index-a">Contact</a><a href="forums.php" class="upper-index-a">Forums</a><a href="login.php" class="upper-index-a btn btn-primary" style="background-color: #0cf">Login</a><a href="registration.php" class="upper-index-a btn btn-primary" style="background-color: #fff; color: #008fb3">Register</a></span>
+	</div>
+<!--<div class="left-index"><a class="left-index-a" href="Intro_to_python.html">Intro to python</a><br><a class="left-index-a" href="Python.html">Get started</a><br><a class="left-index-a" href="Comments.html">Comments</a><br><a class="left-index-a" href="Variabes.html">Data types and Variables</a><br><a class="left-index-a" href="input.html">Input</a><br><a class="left-index-a" href="numbers.html">Numbers</a><br><a class="left-index-a" href="strings.html">Strings</a><br><a class="left-index-a" href="boolean.html">Boolean</a><br><a class="left-index-a" href="">Operators(Soon)</a><br><a class="left-index-a" href="if-statement.html">If statements</a><br><a class="left-index-a" href="lists.html">Lists</a><br><a class="left-index-a" href="tuples.html">Tuples</a><br><a class="left-index-a" href="sets.html">Sets</a><br><a class="left-index-a" href="">Dictionaries(soon)</a><br><a class="left-index-a" href="while_loop.html">While loop</a><br><a class="left-index-a" href="for_loop.html">For loop</a><br><a class="left-index-a" href="functions.html">Functions</a><br><a class="left-index-a" href="">Classes/Objects(Soon)</a><br><a class="left-index-a" href="">Inheritance(Soon)</a><br><a class="left-index-a" href="">Scope(Soon)</a><br><a class="left-index-a" href="">Try-except(Soon)</a><br><br></div>
+-->
+<h1>Classes and Objects</h1>
+<p>Classes are the backbone of python.<br>Everything in python is based on classes and objects.<br><br> Classes are pieces of code that define objects.<br> Classes are mainly used to contain several functions and to classify those functions.<br><br>An example of a class is a car. A car needs to perform several different functions to operate properly: to move, to regualte temperature, to keep check of speed, to keep check of fuel/battery, etc. All of this combined into one is a car.</p>
+
+<h1>Creating Classes</h1>
+<p>Here's how to create a class. <span class="highlight">Note: this class does not do anything since classes have to be called just like functions before it does anything.</span></p>
+<div class="example"><h1>Example</h1><span class="snippet">
+	<span class="snippet-keyword">class</span> thisClass():<br>&nbsp;&nbsp;&nbsp;
+	x = <span class="snippet-number">5</span></span>&nbsp;</div>
+
+<h1>Creating objects</h1>
+<p>To use classes, objects need to be created. Objects are how classes are called.</p>
+<div class="example"><h1>Example</h1><span class="snippet">
+	<span class="snippet-keyword">class</span> thisClass():<br>&nbsp;&nbsp;&nbsp;
+	x = <span class="snippet-number">5</span><br>obj = thisClass()<br>
+	<span class="snippet-keyword">print</span>(obj.x)</span>
+<div class="container"><a href="https://trinket.io/python/a6659590ff?showInstructions=true" target="_blank" class="button">Try it out!</a></div></div>
+
+<h1>__init__() function and the self parameter</h1>
+<p>What actually defines the class is the <span class="highlight">__init__()</span> function.<br> </p>
+</body>
+
+</html>

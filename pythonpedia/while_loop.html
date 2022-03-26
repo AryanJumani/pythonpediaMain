@@ -1,0 +1,69 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+<title>While Loop</title>
+<link href="stylesheet.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+	<div class="upper-index">
+	    <span class="logo" style="width: 50%; display: inline; align-items: center; margin-left: 5px"><img src="logo.png" width="50px" style="margin-top: 5px"></span>
+	    <span class="upper-index-all-hrefs"><a href="CodingForBeginners.html" class="upper-index-a">Home</a><a href="contact.html" class="upper-index-a">Contact</a><a href="forums.php" class="upper-index-a">Forums</a><a href="login.php" class="upper-index-a btn btn-primary" style="background-color: #0cf">Login</a><a href="registration.php" class="upper-index-a btn btn-primary" style="background-color: #fff; color: #008fb3">Register</a></span>
+	</div>
+<div class="left-index"><a class="left-index-a" href="Intro_to_python.html">Intro to python</a><br><a class="left-index-a" href="Python.html">Get started</a><br><a class="left-index-a" href="Comments.html">Comments</a><br><a class="left-index-a" href="Variabes.html">Data types and Variables</a><br><a class="left-index-a" href="input.html">Input</a><br><a class="left-index-a" href="numbers.html">Numbers</a><br><a class="left-index-a" href="strings.html">Strings</a><br><a class="left-index-a" href="boolean.html">Boolean</a><br><a class="left-index-a" href="">Operators(Soon)</a><br><a class="left-index-a" href="if-statement.html">If statements</a><br><a class="left-index-a" href="lists.html">Lists</a><br><a class="left-index-a" href="tuples.html">Tuples</a><br><a class="left-index-a" href="sets.html">Sets</a><br><a class="left-index-a" href="">Dictionaries(soon)</a><br><a class="left-index-a" href="while_loop.html">While loop</a><br><a class="left-index-a" href="for_loop.html">For loop</a><br><a class="left-index-a" href="functions.html">Functions</a><br><a class="left-index-a" href="">Classes/Objects(Soon)</a><br><a class="left-index-a" href="">Inheritance(Soon)</a><br><a class="left-index-a" href="">Scope(Soon)</a><br><a class="left-index-a" href="">Try-except(Soon)</a><br><br></div>
+
+<h1>Python Loops</h1>
+<p>Python has mainly two loops:</p>
+<ul style="list-style-type:none">
+<li><span class="highlight">while</span> loop</li>
+<li><span class="highlight">for</span> loop</li>
+</ul>
+
+<h1>While Loop</h1>
+<p>The <span class="highlight">while</span> loop will keep on running as long as a condition provided is true</p>
+<p>It is also used in games as the main loop which never stops</p>
+<div class="example"><h1>Example</h1><span class="snippet">i =
+	<span class="snippet-number">1</span><br><span class="snippet-condition">while</span>(i &lt;=<span class="snippet-number">
+	10</span>):<br><span class="snippet-keyword">&nbsp;&nbsp;&nbsp; print</span>(i)<br>&nbsp;&nbsp;&nbsp;
+	i += <span class="snippet-number">1</span></span>
+<div class="container"><a href="https://trinket.io/python/0664d55610?showInstructions=true" target="_blank" class="button">Try it out!</a></div></div>
+<div class="note" style="padding:10px">
+<h1 style="display:inline; margin-bottom:0px">Note</h1>
+<button type="button" onclick="enlarge('enlarger', this.firstChild)" style="border-style: none; border-color: inherit; border-width: 0; background: transparent; display:inline-block; width: 40px; float:right"><img src="down_arrow.png" alt="Enlarge and Capsize Note" height="30px"></button>
+
+<div id="enlarger" style="display:none">
+
+<div class="note-text">Do not forget to increase i by 1 otherwise the loop will run forever</div></div></div>
+<h1>Break statement</h1>
+<p>The break statement ends the loop even if the condition is true</p>
+<div class="example"><h1>Example</h1><span class="snippet">i =
+	<span class="snippet-number">1</span><br><span class="snippet-condition">while</span>(i &lt;=<span class="snippet-number">
+	10</span>):<br><span class="snippet-keyword">&nbsp;&nbsp;&nbsp; print</span>(i)<br>&nbsp;&nbsp;&nbsp;
+	<span class="snippet-condition">if</span>(i == <span class="snippet-number">
+	6</span>):<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	<span class="snippet-condition">break</span><br>&nbsp;&nbsp;&nbsp;
+	i += <span class="snippet-number">1</span></span>
+<div class="container"><a href="https://trinket.io/python/4f55137e8e?showInstructions=true" target="_blank" class="button">Try it out!</a></div></div>
+
+
+<script type="text/javascript">
+function enlarge(elmnt, imgTag) {
+	var x = document.getElementById(elmnt);
+	if (x.style.display === "none") {
+
+		x.style.display = "block";
+		imgTag.src = "up_arrow.png";
+  	}
+  	else{
+
+  		x.style.display = "none";
+  		imgTag.src = "down_arrow.png";
+  	}
+}
+</script>
+
+</body>
+
+</html>

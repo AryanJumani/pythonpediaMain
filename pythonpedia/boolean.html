@@ -1,0 +1,95 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+<title>Boolean</title>
+<link href="stylesheet.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+	<div class="upper-index">
+	    <span class="logo" style="width: 50%; display: inline; align-items: center; margin-left: 5px"><img src="logo.png" width="50px" style="margin-top: 5px"></span>
+	    <span class="upper-index-all-hrefs"><a href="CodingForBeginners.html" class="upper-index-a">Home</a><a href="contact.html" class="upper-index-a">Contact</a><a href="forums.php" class="upper-index-a">Forums</a><a href="login.php" class="upper-index-a btn btn-primary" style="background-color: #0cf">Login</a><a href="registration.php" class="upper-index-a btn btn-primary" style="background-color: #fff; color: #008fb3">Register</a></span>
+	</div>
+<div class="left-index"><a class="left-index-a" href="Intro_to_python.html">Intro to python</a><br><a class="left-index-a" href="Python.html">Get started</a><br><a class="left-index-a" href="Comments.html">Comments</a><br><a class="left-index-a" href="Variabes.html">Data types and Variables</a><br><a class="left-index-a" href="input.html">Input</a><br><a class="left-index-a" href="numbers.html">Numbers</a><br><a class="left-index-a" href="strings.html">Strings</a><br><a class="left-index-a" href="boolean.html">Boolean</a><br><a class="left-index-a" href="">Operators(Soon)</a><br><a class="left-index-a" href="if-statement.html">If statements</a><br><a class="left-index-a" href="lists.html">Lists</a><br><a class="left-index-a" href="tuples.html">Tuples</a><br><a class="left-index-a" href="sets.html">Sets</a><br><a class="left-index-a" href="">Dictionaries(soon)</a><br><a class="left-index-a" href="while_loop.html">While loop</a><br><a class="left-index-a" href="for_loop.html">For loop</a><br><a class="left-index-a" href="functions.html">Functions</a><br><a class="left-index-a" href="">Classes/Objects(Soon)</a><br><a class="left-index-a" href="">Inheritance(Soon)</a><br><a class="left-index-a" href="">Scope(Soon)</a><br><a class="left-index-a" href="">Try-except(Soon)</a><br><br></div>
+<h1>Booleans</h1>
+<p>Unlike other data types which can hold several different values, boolean can store only two values: <span class="highlight">True</span> and <span class="highlight">False</span>.</p>
+<p>When you compare two values, a Boolean value will be returned to the user.</p>
+
+<div class="example"><h1>Example</h1><span class="snippet">
+	<span class="snippet-keyword">print</span>(<span class="snippet-number">5</span>&gt;<span class="snippet-number">9</span>)<br>
+	<span class="snippet-keyword">print</span>(<span class="snippet-number">5</span>&gt;<span class="snippet-number">4</span>)<br>
+	<span class="snippet-keyword">print</span>(<span class="snippet-number">5</span>==<span class="snippet-number">3</span>)</span>
+<div class="container"><a href="https://trinket.io/python/e54948e492?showInstructions=true" target="_blank" class="button">Try it out!</a></div></div>
+
+<h1>Conditions</h1>
+<p>Python supports the following conditions which return a Boolean value: </p>
+
+<table>
+	<tr>
+		<td><span class="highlight">a==b</span></td>
+		<td>A is equal to B</td>
+	</tr>
+	<tr>
+		<td><span class="highlight">a!=b</span></td>
+		<td>A is not equal to B</td>
+	</tr>
+	<tr>
+		<td><span class="highlight">a&gt;b</span></td>
+		<td>A is greater than B</td>
+	</tr>
+	<tr>
+		<td><span class="highlight">a&lt;b</span></td>
+		<td>A is lesser than B</td>
+	</tr>
+	<tr>
+		<td><span class="highlight">a&gt;=b</span></td>
+		<td>A is greater than or equal to B</td>
+	</tr>
+	<tr>
+		<td><span class="highlight">a&lt;=b</span></td>
+		<td>A is lesser than or equal to B</td>
+	</tr>
+</table>
+
+<p>In the if statement, Python will return a Boolean value. Learn more about if statements <a href="if-statement.html" style="color:inherit">here</a></p>
+<div class="example"><h1>Example</h1><span class="snippet">
+	a = <span class="snippet-number">10</span><br>b =
+	<span class="snippet-number">5</span><br><span class="snippet-condition">if</span>(a&gt;=b):<br>&nbsp;&nbsp;&nbsp;
+	<span class="snippet-keyword">print</span>(<span class="snippet-text">"A is
+	greater than or equal to B"</span>) <span class="snippet-text">#It returned
+	True<br></span><span class="snippet-condition">else</span>:<br>&nbsp;&nbsp;&nbsp; <span class="snippet-keyword">print</span>(<span class="snippet-text">"A
+	is not greater than or equal to B"</span>) <span class="snippet-text">#It
+	returned False</span></span>
+<div class="container"><a href="https://trinket.io/python/dc72d0d10f?showInstructions=true" target="_blank" class="button">Try it out!</a></div></div>
+
+
+<h1>Bool function</h1>
+<p>The <span class="highlight">bool()</span> function checks the value entered within the brackets and returns either <span class="highlight">True</span> or <span class="highlight">False</span>.</p>
+<div class="example"><h1>Example</h1><span class="snippet">
+	<span class="snippet-keyword">print</span>(<span class="snippet-keyword">bool</span>(<span class="snippet-number">100</span>))<br>
+	<span class="snippet-keyword">print</span>(<span class="snippet-keyword">bool</span>(<span class="snippet-text">"Hello
+	World"</span>))</span>
+<div class="container"><a href="https://trinket.io/python/c643daee88?showInstructions=true" target="_blank" class="button">Try it out!</a></div></div>
+
+<p>Most of the times, the printed value will be True. However, sometimes the values will be False when the value is empty, such as:
+<span class="highlight">()</span>, <span class="highlight">[]</span>,
+<span class="highlight">{}</span>, <span class="highlight snippet-text">""</span>,
+<span class="highlight snippet-number">0</span>, the value
+<span class="highlight snippet-condition">None</span> and
+<span class="highlight snippet-condition">False</span> itself.</p>
+<div class="example"><h1>Example</h1><span class="snippet">
+	<span class="snippet-keyword">print</span>(<span class="snippet-keyword">bool</span>(()))<br>
+	<span class="snippet-keyword">print</span>(<span class="snippet-keyword">bool</span>([]))<br>
+	<span class="snippet-keyword">print</span>(<span class="snippet-keyword">bool</span>({}))<br>
+	<span class="snippet-keyword">print</span>(<span class="snippet-keyword">bool</span>(<span class="snippet-text">""</span>))<br>
+	<span class="snippet-keyword">print</span>(<span class="snippet-keyword">bool</span>(<span class="snippet-number">0</span>))<br>
+	<span class="snippet-keyword">print</span>(<span class="snippet-keyword">bool</span>(<span class="snippet-condition">None</span>))<br>
+	<span class="snippet-keyword">print</span>(<span class="snippet-keyword">bool</span>(<span class="snippet-condition">False</span>))</span>
+<div class="container"><a href="https://trinket.io/python/84dda92981?showInstructions=true" target="_blank" class="button">Try it out!</a></div></div>
+
+
+</body>
+
+</html>

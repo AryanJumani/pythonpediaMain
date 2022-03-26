@@ -1,0 +1,94 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+<title>Numbers</title>
+<link href="stylesheet.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+	<div class="upper-index">
+	    <span class="logo" style="width: 50%; display: inline; align-items: center; margin-left: 5px"><img src="logo.png" width="50px" style="margin-top: 5px"></span>
+	    <span class="upper-index-all-hrefs"><a href="CodingForBeginners.html" class="upper-index-a">Home</a><a href="contact.html" class="upper-index-a">Contact</a><a href="forums.php" class="upper-index-a">Forums</a><a href="login.php" class="upper-index-a btn btn-primary" style="background-color: #0cf">Login</a><a href="registration.php" class="upper-index-a btn btn-primary" style="background-color: #fff; color: #008fb3">Register</a></span>
+	</div>
+<div class="left-index"><a class="left-index-a" href="Intro_to_python.html">Intro to python</a><br><a class="left-index-a" href="Python.html">Get started</a><br><a class="left-index-a" href="Comments.html">Comments</a><br><a class="left-index-a" href="Variabes.html">Data types and Variables</a><br><a class="left-index-a" href="input.html">Input</a><br><a class="left-index-a" href="numbers.html">Numbers</a><br><a class="left-index-a" href="strings.html">Strings</a><br><a class="left-index-a" href="boolean.html">Boolean</a><br><a class="left-index-a" href="">Operators(Soon)</a><br><a class="left-index-a" href="if-statement.html">If statements</a><br><a class="left-index-a" href="lists.html">Lists</a><br><a class="left-index-a" href="tuples.html">Tuples</a><br><a class="left-index-a" href="sets.html">Sets</a><br><a class="left-index-a" href="">Dictionaries(soon)</a><br><a class="left-index-a" href="while_loop.html">While loop</a><br><a class="left-index-a" href="for_loop.html">For loop</a><br><a class="left-index-a" href="functions.html">Functions</a><br><a class="left-index-a" href="">Classes/Objects(Soon)</a><br><a class="left-index-a" href="">Inheritance(Soon)</a><br><a class="left-index-a" href="">Scope(Soon)</a><br><a class="left-index-a" href="">Try-except(Soon)</a><br><br></div>
+
+<h1>Numbers in python</h1>
+<p>There are three numeric types of data in Python: </p>
+<ul>
+<li><span class="highlight">int</span></li>
+<li><span class="highlight">float</span></li>
+<li><span class="highlight">complex</span></li>
+</ul>
+
+<div class="example"><h1>Example</h1><span class="snippet">a =
+	<span class="snippet-number">2</span> <span class="snippet-text">#int</span><br>
+	b = <span class="snippet-number">2.5</span> <span class="snippet-text">
+	#float</span><br>c =
+	<span class="snippet-number">2j</span> <span class="snippet-text">#complex</span></span>
+</div>
+
+<h1>Int</h1>
+<p>An int(integer) type is any number, positive or negative, without any decimals or fractions.</p>
+<h1>Float</h1>
+<p>A float(floating point number) is a number, positive or negative, with decimals.<br>Floats can also be scientific numbers with an 'e' to indicate the power of 10.</p>
+<h1>Complex</h1>
+<p>Complex numbers are written with 'j' as their imaginary part instead of 'i'.</p>
+<h1>Type conversion</h1>
+<p>You can convert from one type to another using the <span class="highlight">int()</span>, <span class="highlight">float()</span>, and <span class="highlight">complex()</span> methods</p>
+<div class="example"><h1>Example</h1><span class="snippet">a =
+	<span class="snippet-number">2</span> <span class="snippet-text">#int</span><br>
+	b = <span class="snippet-number">2.5</span> <span class="snippet-text">
+	#float</span><br>c =
+	<span class="snippet-number">2j</span> <span class="snippet-text">#complex</span><br>
+	<br><span class="snippet-text">#int to float</span><br>d =
+	<span class="snippet-keyword">float</span>(a)<br><span class="snippet-text">
+	#int to complex</span><br>e =
+	<span class="snippet-keyword">complex</span>(a)<br>
+	<span class="snippet-text">#float to int</span><br>f =
+	<span class="snippet-keyword">int</span>(b)<br><span class="snippet-text">
+	#float to complex</span><br>g =
+	<span class="snippet-keyword">complex</span>(b)</span>
+<div class="container"><a href="https://trinket.io/python/1c5b51f455?showInstructions=true" target="_blank" class="button">Try it out!</a></div></div>
+
+
+<div class="note" style="padding:10px">
+<h1 style="display:inline; margin-bottom:0px">Note</h1>
+<button type="button" onclick="enlarge('enlarger', this.firstChild)" style="border-style: none; border-color: inherit; border-width: 0; background: transparent; display:inline-block; width: 40px; float:right"><img src="down_arrow.png" alt="Enlarge and Capsize Note" height="30px"></button>
+
+<div id="enlarger" style="display:none">
+
+<div class="note-text">You cannot convert from complex to any other numeric type</div></div></div>
+
+<h1>Random Numbers</h1>
+<p>To make random numbers within a range, python has a <span class="highlight">random</span> module which needs to be imported with the <span class="highlight">import</span> system</p>
+<div class="example"><h1>Example</h1><span class="snippet">
+	<span class="snippet-condition">import</span> random<br>
+	<span class="snippet-text">#print a random number between 1 and 100</span><br>
+	<span class="snippet-keyword">print</span>(random.randrange(<span class="snippet-number">1</span>,
+	<span class="snippet-number">100</span>))</span>
+<div class="container"><a href="https://trinket.io/python/a13252ffb2?showInstructions=true" target="_blank" class="button">Try it out!</a></div></div>
+
+
+
+
+<script type="text/javascript">
+function enlarge(elmnt, imgTag) {
+	var x = document.getElementById(elmnt);
+	if (x.style.display === "none") {
+
+		x.style.display = "block";
+		imgTag.src = "up_arrow.png";
+  	}
+  	else{
+
+  		x.style.display = "none";
+  		imgTag.src = "down_arrow.png";
+  	}
+}
+</script>
+
+</body>
+
+</html>

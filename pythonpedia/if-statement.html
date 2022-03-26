@@ -1,0 +1,74 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+<title>If Statements</title>
+<link href="stylesheet.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+	<div class="upper-index">
+	    <span class="logo" style="width: 50%; display: inline; align-items: center; margin-left: 5px"><img src="logo.png" width="50px" style="margin-top: 5px"></span>
+	    <span class="upper-index-all-hrefs"><a href="CodingForBeginners.html" class="upper-index-a">Home</a><a href="contact.html" class="upper-index-a">Contact</a><a href="forums.php" class="upper-index-a">Forums</a><a href="login.php" class="upper-index-a btn btn-primary" style="background-color: #0cf">Login</a><a href="registration.php" class="upper-index-a btn btn-primary" style="background-color: #fff; color: #008fb3">Register</a></span>
+	</div>
+<div class="left-index"><a class="left-index-a" href="Intro_to_python.html">Intro to python</a><br><a class="left-index-a" href="Python.html">Get started</a><br><a class="left-index-a" href="Comments.html">Comments</a><br><a class="left-index-a" href="Variabes.html">Data types and Variables</a><br><a class="left-index-a" href="input.html">Input</a><br><a class="left-index-a" href="numbers.html">Numbers</a><br><a class="left-index-a" href="strings.html">Strings</a><br><a class="left-index-a" href="boolean.html">Boolean</a><br><a class="left-index-a" href="">Operators(Soon)</a><br><a class="left-index-a" href="if-statement.html">If statements</a><br><a class="left-index-a" href="lists.html">Lists</a><br><a class="left-index-a" href="tuples.html">Tuples</a><br><a class="left-index-a" href="sets.html">Sets</a><br><a class="left-index-a" href="">Dictionaries(soon)</a><br><a class="left-index-a" href="while_loop.html">While loop</a><br><a class="left-index-a" href="for_loop.html">For loop</a><br><a class="left-index-a" href="functions.html">Functions</a><br><a class="left-index-a" href="">Classes/Objects(Soon)</a><br><a class="left-index-a" href="">Inheritance(Soon)</a><br><a class="left-index-a" href="">Scope(Soon)</a><br><a class="left-index-a" href="">Try-except(Soon)</a><br><br></div>
+
+<p>The If Statement is used to ask the computer a question, called as the condition.</p>
+<p>The computer can only answer the question as a yes(true) or no(false)</p>
+<p>If it is true, then the computer will do the following code which is written with an indentation.</p>
+<h1>If and Else statement</h1>
+<video controls src="if_main_1.mp4" width="640px"></video>
+<p>The condition must return a boolean value otherwise it will return an error.</p>
+<p>If the If statement returns false, it will run the Else statement automatically unless there is an elif statement</p>
+<p>The syntax for the if and else statement is as follows:</p>
+<div class="example"><h1>Example</h1><span class="snippet"><span class="snippet-condition">if</span>(5&gt;2):<br>&nbsp;&nbsp;&nbsp;&nbsp;<span class="snippet-keyword">print</span>(<span class="snippet-text">"This is true. 5 is greater than 2"</span>)</span>
+<div class="container"><a href="https://trinket.io/python/522ad75ddd?showInstructions=true" target="_blank" class="button">Try it out!</a></div></div>
+<h1>Elif statement</h1>
+<video controls src="if_main_2.mp4" width="640px"></video>
+<p>The Elif statement is short for else if which means that if the if statement reutrns false, it will move onto the elif condition instead of the else statement. There can be many elif statements.</p>
+<p>This demonstration below will show you the syntax for elif and give a better understanding of the if statement.</p>
+<div class="example"><h1>Example</h1><span class="snippet">a = <span class="snippet-keyword">
+	int</span>(<span class="snippet-keyword">input</span>(<span class="snippet-text">"Enter a number"</span>)<br>b = <span class="snippet-keyword">
+	int</span>(<span class="snippet-keyword">input</span>(<span class="snippet-text">"Enter another number"</span>)</span>
+<div class="container"><a href="https://trinket.io/python/42996a4fc1?showInstructions=true" target="_blank" class="button">Try it out!</a></div></div>
+<h1>Logical Operators</h1>
+<p>Sometimes, there may be more than one condition which you might have to put, for that there are logical operators.</p>
+<h1>And</h1>
+<video controls src="if_main3.mp4" width="640px"></video>
+<p>The And operator is a logical operator which works like the AND logic gate. To put it simply, with the usage of <span class="highlight">and</span> in the condition, it will return true only if both the conditions provided return true.</p>
+<div class="example"><h1>Example</h1><span class="snippet">a = <span class="snippet-keyword">
+	int</span>(<span class="snippet-keyword">input</span>(<span class="snippet-text">"Enter a number"</span>)<br>b = <span class="snippet-keyword">
+	int</span>(<span class="snippet-keyword">input</span>(<span class="snippet-text">"Enter another number"</span>)<br>c = <span class="snippet-number">10</span></span>
+<div class="container"><a href="https://trinket.io/python/2446a71d59?showInstructions=true" target="_blank" class="button">Try it out!</a></div></div>
+<h1>Or</h1>
+<video controls src="if_main4.mp4" width="640px"></video>
+<p>The Or operator is a logical operator which works like the OR logic gate. To put it simply, with the usage of <span class="highlight">or</span> in the condition, it will return true when any one of the conditions returns true.</p>
+<div class="example"><h1>Example</h1><span class="snippet">a = <span class="snippet-keyword">
+	int</span>(<span class="snippet-keyword">input</span>(<span class="snippet-text">"Enter a number"</span>)<br>b = <span class="snippet-keyword">
+	int</span>(<span class="snippet-keyword">input</span>(<span class="snippet-text">"Enter another number"</span>)<br>c = <span class="snippet-number">10</span></span>
+<div class="container"><a href="https://trinket.io/python/9f39b778f2?showInstructions=true" target="_blank" class="button">Try it out!</a></div></div>
+<h1>Nested If</h1>
+<video controls src="if_main5.mp4" width="640px"></video>
+<p>You can even have <span class="highlight">if</span> statements inside <span class="highlight">if</span> statements. This is known as <span class="highlight">nested if</span> statements</p>
+<div class="example"><h1>Example</h1><span class="snippet">a = <span class="snippet-keyword">
+	int</span>(<span class="snippet-keyword">input</span>(<span class="snippet-text">"Enter a
+	number"</span>)<br><span class="snippet-condition">if</span>(x><span class="snippet-text">5</span>):<br>&nbsp;&nbsp;&nbsp;
+	<span class="snippet-keyword">print</span>(<span class="snippet-text">"X is
+	greater than 5"</span>)<br>&nbsp;&nbsp;&nbsp;
+	<span class="snippet-condition">if</span>(x&gt;<span class="snippet-number">10</span>):<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	<span class="snippet-keyword">print</span>(<span class="snippet-text">"X is
+	also greater than 10"</span>)<br>&nbsp;&nbsp;&nbsp;
+	<span class="snippet-condition">else</span>:<br>&nbsp;&nbsp;&nbsp;
+	<span class="snippet-keyword">&nbsp;&nbsp;&nbsp; print</span>(<span class="snippet-text">"However,
+	it is not greater than 10"</span>)</span>&nbsp;<div class="container"><a href="https://trinket.io/python/29075586a8?showInstructions=true" target="_blank" class="button">Try it out!</a></div></div>
+<h1>Pass statement</h1>
+<p>If statements' content cannot be left blank, unless you pass a parameter called <span class="highlight">pass</span></p>
+<div class="example"><h1>Example</h1><span class="snippet"><span class="snippet-condition">if</span>(5>2):<br>&nbsp;&nbsp;&nbsp;&nbsp;<span class="snippet-keyword">pass</span><br>
+	<span class="snippet-condition">else</span>:<br>&nbsp;&nbsp;&nbsp;
+	<span class="snippet-keyword">print</span>(<span class="snippet-text">"Something went wrong with mathematics"</span>)</span>
+<div class="container"><a href="https://trinket.io/python/abd2183039?showInstructions=true" target="_blank" class="button">Try it out!</a></div></div>
+
+</body>
+
+</html>

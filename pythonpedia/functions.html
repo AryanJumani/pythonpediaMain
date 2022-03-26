@@ -1,0 +1,181 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+<title>Functions</title>
+<link href="stylesheet.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+	<div class="upper-index">
+	    <span class="logo" style="width: 50%; display: inline; align-items: center; margin-left: 5px"><img src="logo.png" width="50px" style="margin-top: 5px"></span>
+	    <span class="upper-index-all-hrefs"><a href="CodingForBeginners.html" class="upper-index-a">Home</a><a href="contact.html" class="upper-index-a">Contact</a><a href="forums.php" class="upper-index-a">Forums</a><a href="login.php" class="upper-index-a btn btn-primary" style="background-color: #0cf">Login</a><a href="registration.php" class="upper-index-a btn btn-primary" style="background-color: #fff; color: #008fb3">Register</a></span>
+	</div>
+<div class="left-index"><a class="left-index-a" href="Intro_to_python.html">Intro to python</a><br><a class="left-index-a" href="Python.html">Get started</a><br><a class="left-index-a" href="Comments.html">Comments</a><br><a class="left-index-a" href="Variabes.html">Data types and Variables</a><br><a class="left-index-a" href="input.html">Input</a><br><a class="left-index-a" href="numbers.html">Numbers</a><br><a class="left-index-a" href="strings.html">Strings</a><br><a class="left-index-a" href="boolean.html">Boolean</a><br><a class="left-index-a" href="">Operators(Soon)</a><br><a class="left-index-a" href="if-statement.html">If statements</a><br><a class="left-index-a" href="lists.html">Lists</a><br><a class="left-index-a" href="tuples.html">Tuples</a><br><a class="left-index-a" href="sets.html">Sets</a><br><a class="left-index-a" href="">Dictionaries(soon)</a><br><a class="left-index-a" href="while_loop.html">While loop</a><br><a class="left-index-a" href="for_loop.html">For loop</a><br><a class="left-index-a" href="functions.html">Functions</a><br><a class="left-index-a" href="">Classes/Objects(Soon)</a><br><a class="left-index-a" href="">Inheritance(Soon)</a><br><a class="left-index-a" href="">Scope(Soon)</a><br><a class="left-index-a" href="">Try-except(Soon)</a><br><br></div>
+
+<h1>Functions</h1>
+<p>Functions are lines of code which only run when they are called.</p>
+<p>The function can return data which can then be printed. <br>It is a way to avoid repetition of code.</p>
+
+<h1>Creating Functions</h1>
+<p>Functions are created by the use of the <span class="highlight">def</span> keyword.</p>
+<div class="example"><h1>Example</h1><span class="snippet">
+	<span class="snippet-condition">def</span> <span class="snippet-func">aFunction</span>():<br>&nbsp;&nbsp;&nbsp;
+	<span class="snippet-keyword">print</span>(<span class="snippet-text">"This is running from a function!"</span>)</span></div>
+
+<h1>Calling Functions</h1>
+<p>To call a function in Python, you simply type the name of the function whenever you want to run that piece of code.</p>
+<div class="example"><h1>Example</h1><span class="snippet">
+	<span class="snippet-condition">def</span> <span class="snippet-func">aFunction</span>():<br>&nbsp;&nbsp;&nbsp;
+	<span class="snippet-keyword">print</span>(<span class="snippet-text">"This is running from a function!"</span>)<br>
+	aFunction()<br></span>
+<div class="container"><a href="https://trinket.io/python/379afff5cf?showInstructions=true" target="_blank" class="button">Try it out!</a></div></div>
+
+<h1>Return values</h1>
+<p>As stated earlier, functions return values. This is done using the <span class="highlight">return</span> statement.<br>
+This is useful when you just want to access a value and not print it.</p>
+<div class="example"><h1>Example</h1><span class="snippet">
+	<span class="snippet-condition">def</span> <span class="snippet-func">aFunction</span>():<br>&nbsp;&nbsp;&nbsp;
+	<span class="snippet-condition">return</span> <span class="snippet-text">
+	"This is being returned from the function. So, it won't print unless the function is printed."</span><br>
+	aFunction()<br><span class="snippet-keyword">print</span>(aFunction())<br></span>
+<div class="container"><a href="https://trinket.io/python/6906881636?showInstructions=true" target="_blank" class="button">Try it out!</a></div></div>
+
+<h1>Arguments</h1>
+<p>Sometimes, the function needs some information to work as intended. This is done using arguments.</p>
+<p>They are written within the brackets of the function, after the function name.<br> You have to separate arguments with a comma if there are more than one.</p>
+<div class="example"><h1>Example</h1><span class="snippet">
+	<span class="snippet-condition">def</span> <span class="snippet-func">aFunction</span>(theinput):<br>&nbsp;&nbsp;&nbsp;
+	x = theinput * 5<br>&nbsp;&nbsp;&nbsp; <span class="snippet-condition">
+	return</span> x<br>a, b, c = <span class="snippet-keyword">map</span>(<span class="snippet-keyword">int</span>,
+	<span class="snippet-keyword">input</span>(<span class="snippet-text">"Enter
+	three numbers separated by a space: "</span>).split())<br>
+	<span class="snippet-keyword">print</span>(aFunction(a))<br>
+	<span class="snippet-keyword">print</span>(aFunction(b))<br>
+	<span class="snippet-keyword">print</span>(aFunction(c))<br></span>
+<div class="container"><a href="https://trinket.io/python/717f82fc2b?showInstructions=true" target="_blank" class="button">Try it out!</a></div></div>
+
+<div class="note" style="padding:10px">
+<h1 style="display:inline; margin-bottom:0px">Note</h1>
+<button type="button" onclick="enlarge('enlarger', this.firstChild)" style="border-style: none; border-color: inherit; border-width: 0; background: transparent; display:inline-block; width: 40px; float:right"><img src="down_arrow.png" alt="Enlarge and Capsize Note" height="30px"></button>
+
+<div id="enlarger" style="display:none">
+
+<div class="note-text">Arguments are also called parameters.</div></div></div>
+
+
+<p>If you have asked for 2 arguments in the function, then Python will need two arguments itself when the function is called.<br>Any more or any less will result in an error.</p>
+<div class="example"><h1>Example</h1><span class="snippet">
+	<span class="snippet-condition">def</span> <span class="snippet-func">aFunction</span>(a,
+	b):<br>&nbsp;&nbsp;&nbsp; x = a * b<br>&nbsp;&nbsp;&nbsp; <span class="snippet-condition">
+	return</span> x<br>a, b = <span class="snippet-keyword">map</span>(<span class="snippet-keyword">int</span>,
+	<span class="snippet-keyword">input</span>(<span class="snippet-text">"Enter
+	two numbers separated by a space: "</span>).split())<br>
+	<span class="snippet-keyword">print</span>(aFunction(a, b))</span>
+<div class="container"><a href="https://trinket.io/python/9a0809d808?showInstructions=true" target="_blank" class="button">Try it out!</a></div></div>
+
+<p>This did not give any error. However, the code below will give an error.</p>
+<div class="example"><h1>Example</h1><span class="snippet">
+	<span class="snippet-condition">def</span> <span class="snippet-func">aFunction</span>(a,
+	b):<br>&nbsp;&nbsp;&nbsp; x = a * b<br>&nbsp;&nbsp;&nbsp; <span class="snippet-condition">
+	return</span> x<br>a, b = <span class="snippet-keyword">map</span>(<span class="snippet-keyword">int</span>,
+	<span class="snippet-keyword">input</span>(<span class="snippet-text">"Enter
+	two numbers separated by a space: "</span>).split())<br>
+	<span class="snippet-keyword">print</span>(aFunction(a, b,
+	<span class="snippet-number">5</span>))</span>
+<div class="container"><a href="https://trinket.io/python/1d34a2954b?showInstructions=true" target="_blank" class="button">Try it out!</a></div></div>
+
+<p>If you do not know how many arguments will be passed in your function, use a <span class="highlight">*</span> before the argument name in the function.<br>This will allow you to enter multiple arguments which will be stored in a tuple of the argument name.</p>
+<div class="example"><h1>Example</h1><span class="snippet">
+	<span class="snippet-condition">def</span> <span class="snippet-func">aFunction</span>(*a):<br>&nbsp;&nbsp;&nbsp;
+	x = <span class="snippet-number">1</span><br>&nbsp;&nbsp;&nbsp;
+	<span class="snippet-condition">for</span> i <span class="snippet-condition">
+	in</span> <span class="snippet-keyword">range</span>(<span class="snippet-keyword">len</span>(a)):<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	x = x*a[i]<br>&nbsp;&nbsp;&nbsp; <span class="snippet-condition">return</span>
+	x&nbsp; <br>a, b = <span class="snippet-keyword">map</span>(<span class="snippet-keyword">int</span>,
+	<span class="snippet-keyword">input</span>(<span class="snippet-text">"Enter
+	two numbers separated by a space: "</span>).split())<br>
+	<span class="snippet-keyword">print</span>(aFunction(a, b,
+	<span class="snippet-number">5</span>))</span>
+<div class="container"><a href="https://trinket.io/python/bbd97a2270?showInstructions=true" target="_blank" class="button">Try it out!</a></div></div>
+
+<div class="note" style="padding:10px">
+<h1 style="display:inline; margin-bottom:0px">Note</h1>
+<button type="button" onclick="enlarge('enlarger1', this.firstChild)" style="border-style: none; border-color: inherit; border-width: 0; background: transparent; display:inline-block; width: 40px; float:right"><img src="down_arrow.png" alt="Enlarge and Capsize Note" height="30px"></button>
+
+<div id="enlarger1" style="display:none">
+
+<div class="note-text">The value of x in the above example is set to 1 and not 0, since 0 multiplied by any number would return 0 itself.</div></div></div>
+
+<p>You can also input arguments by telling what argument name refers to what value. This is called as keyword arguments.</p>
+<div class="example"><h1>Example</h1><span class="snippet">
+	<span class="snippet-condition">def</span> <span class="snippet-func">aFunction</span>(a,
+	b, c):<br>&nbsp;&nbsp;&nbsp; x = a + b * c<br>&nbsp;&nbsp;&nbsp;
+	<span class="snippet-condition">return</span> x<br>no1, no2, no3 = <span class="snippet-keyword">map</span>(<span class="snippet-keyword">int</span>,
+	<span class="snippet-keyword">input</span>(<span class="snippet-text">"Enter
+	three numbers separated by a space: "</span>).split())<br>
+	<span class="snippet-keyword">print</span>(aFunction(a = no1, c = no2, b =
+	no3))</span>
+<div class="container"><a href="https://trinket.io/python/1289a52c20?showInstructions=true" target="_blank" class="button">Try it out!</a></div></div>
+
+<p>If you do not know how many keyword arguments will be input by the user, use <span class="highlight">**</span> before the variable name in the function.<br>This will save the entire input as a dictionary.</p>
+<div class="example"><h1>Example</h1><span class="snippet">
+	<span class="snippet-condition">def</span> <span class="snippet-func">aFunction</span>(**thisdict):<br>&nbsp;&nbsp;&nbsp;
+	x = <span class="snippet-number">1</span><br>&nbsp;&nbsp;&nbsp;
+	<span class="snippet-condition">for</span> i <span class="snippet-condition">
+	in</span> thisdict:<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	x = x*thisdict[i]<br>&nbsp;&nbsp;&nbsp; <span class="snippet-condition">return</span>
+	x<br>no1, no2, no3 = <span class="snippet-keyword">map</span>(<span class="snippet-keyword">int</span>,
+	<span class="snippet-keyword">input</span>(<span class="snippet-text">"Enter
+	three numbers separated by a space: "</span>).split())<br>
+	<span class="snippet-keyword">print</span>(aFunction(a = no1, b = no3, c =
+	no2))</span>
+<div class="container"><a href="https://trinket.io/python/af02842658?showInstructions=true" target="_blank" class="button">Try it out!</a></div></div>
+
+<h1>Default parameter value</h1>
+<p>If you pass a function without an argument, it can use the default parameter value if you assign it.</p>
+<div class="example"><h1>Example</h1><span class="snippet">
+	x = 1<br><span class="snippet-condition">def</span> <span class="snippet-func">aFunction</span>(a=2):<br>&nbsp;&nbsp;&nbsp;
+	<span class="snippet-condition">global</span> x<br>&nbsp;&nbsp;&nbsp; x = x * a<br>&nbsp;&nbsp;&nbsp;
+	<span class="snippet-condition">return</span> x<br>no1, no2, no3 =
+	<span class="snippet-keyword">map</span>(<span class="snippet-keyword">int</span>,
+	<span class="snippet-keyword">input</span>(<span class="snippet-text">"Enter
+	three numbers separated by a space"</span>).split())<br>
+	<span class="snippet-keyword">print</span>(aFunction(no1))
+	<span class="snippet-text">#Prints 1*no1</span><br>
+	<span class="snippet-keyword">print</span>(aFunction())
+	<span class="snippet-text">#Prints no1*2(default value)</span><br>
+	<span class="snippet-keyword">print</span>(aFunction(no2))
+	<span class="snippet-text">#Prints no1*2*no2</span><br>
+	<span class="snippet-keyword">print</span>(aFunction(no3))
+	<span class="snippet-text">#Prints no1*no2*no3*2</span></span>
+<div class="container"><a href="https://trinket.io/python/67df22dc24?showInstructions=true" target="_blank" class="button">Try it out!</a></div></div>
+<div class="note" style="padding:10px">
+<h1 style="display:inline; margin-bottom:0px">Note</h1>
+<button type="button" onclick="enlarge('enlarger2', this.firstChild)" style="border-style: none; border-color: inherit; border-width: 0; background: transparent; display:inline-block; width: 40px; float:right"><img src="down_arrow.png" alt="Enlarge and Capsize Note" height="30px"></button>
+
+<div id="enlarger2" style="display:none">
+
+<div class="note-text">The keyword global just makes use of the variable <span class="highlight">x</span> which is outside the function and has not been passed as an argument.<br> We will learn more about local and global variables later.</div></div></div>
+
+
+<script type="text/javascript">
+function enlarge(elmnt, imgTag) {
+	var x = document.getElementById(elmnt);
+	if (x.style.display === "none") {
+
+		x.style.display = "block";
+		imgTag.src = "up_arrow.png";
+  	}
+  	else{
+
+  		x.style.display = "none";
+  		imgTag.src = "down_arrow.png";
+  	}
+}
+
+</script>
+</body>
+
+</html>

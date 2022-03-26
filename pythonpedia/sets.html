@@ -1,0 +1,112 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+<title>Sets</title>
+<link href="stylesheet.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+	<div class="upper-index">
+	    <span class="logo" style="width: 50%; display: inline; align-items: center; margin-left: 5px"><img src="logo.png" width="50px" style="margin-top: 5px"></span>
+	    <span class="upper-index-all-hrefs"><a href="CodingForBeginners.html" class="upper-index-a">Home</a><a href="contact.html" class="upper-index-a">Contact</a><a href="forums.php" class="upper-index-a">Forums</a><a href="login.php" class="upper-index-a btn btn-primary" style="background-color: #0cf">Login</a><a href="registration.php" class="upper-index-a btn btn-primary" style="background-color: #fff; color: #008fb3">Register</a></span>
+	</div>
+<div class="left-index"><a class="left-index-a" href="Intro_to_python.html">Intro to python</a><br><a class="left-index-a" href="Python.html">Get started</a><br><a class="left-index-a" href="Comments.html">Comments</a><br><a class="left-index-a" href="Variabes.html">Data types and Variables</a><br><a class="left-index-a" href="input.html">Input</a><br><a class="left-index-a" href="numbers.html">Numbers</a><br><a class="left-index-a" href="strings.html">Strings</a><br><a class="left-index-a" href="boolean.html">Boolean</a><br><a class="left-index-a" href="">Operators(Soon)</a><br><a class="left-index-a" href="if-statement.html">If statements</a><br><a class="left-index-a" href="lists.html">Lists</a><br><a class="left-index-a" href="tuples.html">Tuples</a><br><a class="left-index-a" href="sets.html">Sets</a><br><a class="left-index-a" href="">Dictionaries(soon)</a><br><a class="left-index-a" href="while_loop.html">While loop</a><br><a class="left-index-a" href="for_loop.html">For loop</a><br><a class="left-index-a" href="functions.html">Functions</a><br><a class="left-index-a" href="">Classes/Objects(Soon)</a><br><a class="left-index-a" href="">Inheritance(Soon)</a><br><a class="left-index-a" href="">Scope(Soon)</a><br><a class="left-index-a" href="">Try-except(Soon)</a><br><br></div>
+
+<h1>Sets</h1>
+<p>A set is the third data type used to store multiple items. So far we have covered Lists and Tuples.</p>
+<p>A set is unordered and unindexed</p>
+<p>Unlike lists, duplicate items are not allowed in sets</p>
+<p>Like lists, their items can be changed.</p>
+<p>They are written with curly brackets</p>
+<div class="example"><h1>Example</h1><span class="snippet">theset = {<span class="snippet-text">"Apple"</span>,
+	<span class="snippet-text">"Banana"</span>, <span class="snippet-condition">
+	False</span>,
+	<span class="snippet-number">10</span>, <span class="snippet-condition">
+	False</span>}<br>
+	<span class="snippet-keyword">print</span>(theset)<br></span>
+<div class="container"><a href="https://trinket.io/python/3775a2a138?showInstructions=true" target="_blank" class="button">Try it out!</a></div></div>
+
+<div class="note" style="padding:10px">
+<h1 style="display:inline; margin-bottom:0px">Note</h1>
+<button type="button" onclick="enlarge('enlarger', this.firstChild)" style="border-style: none; border-color: inherit; border-width: 0; background: transparent; display:inline-block; width: 40px; float:right"><img src="down_arrow.png" alt="Enlarge and Capsize Note" height="30px"></button>
+
+<div id="enlarger" style="display:none">
+
+<div class="note-text">Remember, sets are unordered, so the order of the output might be different to what was given as input</div></div></div>
+
+
+
+<h1>Access items in a set</h1>
+<p>Since the items in a set are unindexed, you cannot use the square brackets to access the items in the set.</p>
+<p>So to access it, you have to use a <span class="highlight"><a href="for_loop.html" style="color:inherit">for</a></span> loop.</p>
+<div class="example"><h1>Example</h1><span class="snippet">theset = {<span class="snippet-text">"Apple"</span>,
+	<span class="snippet-text">"Banana"</span>, <span class="snippet-condition">
+	False</span>, <span class="snippet-number">10</span>,
+	<span class="snippet-condition">False</span>}<br>
+	<span class="snippet-condition">for</span> i <span class="snippet-condition">
+	in</span> theset:<br>&nbsp;&nbsp;&nbsp; <span class="snippet-keyword">print</span>(i)<br></span>
+<div class="container"><a href="https://trinket.io/python/801021d96d?showInstructions=true" target="_blank" class="button">Try it out!</a></div></div>
+
+<h1>Add items to a set</h1>
+<p>Sets can be changed. To add items to a set, simply use the <span class="highlight">add()</span> method.</p>
+<div class="example"><h1>Example</h1><span class="snippet">theset = {<span class="snippet-text">"Apple"</span>,
+	<span class="snippet-text">"Banana"</span>, <span class="snippet-condition">
+	False</span>, <span class="snippet-number">10</span>,
+	<span class="snippet-condition">False</span>}<br>
+	theset.add(<span class="snippet-number">50</span>)<br>
+	<span class="snippet-keyword">print</span>(theset)<br></span>
+<div class="container"><a href="https://trinket.io/python/bc18030982?showInstructions=true" target="_blank" class="button">Try it out!</a></div></div>
+
+<h1>Add another sequence to a set</h1>
+<p>Use the <span class="highlight">update()</span> method to add any sequence(set, tuple, dictionary, list) to a set</p>
+<div class="example"><h1>Example</h1><span class="snippet">theset = {<span class="snippet-text">"Apple"</span>,
+	<span class="snippet-text">"Banana"</span>, <span class="snippet-condition">
+	False</span>, <span class="snippet-number">10</span>,
+	<span class="snippet-condition">False</span>}<br>thetuple = (<span class="snippet-text">"Cucumber"</span>,
+	<span class="snippet-text">"Dragonfruit"</span>)<br>
+	theset.update(thetuple)<br>
+	<span class="snippet-keyword">print</span>(theset)<br></span>
+<div class="container"><a href="https://trinket.io/python/782a7c42b0?showInstructions=true" target="_blank" class="button">Try it out!</a></div></div>
+
+<h1>Remove items from a set</h1>
+<p>To remove an item from a set, simply use the <span class="highlight">remove()</span> method.</p>
+<div class="example"><h1>Example</h1><span class="snippet">theset = {<span class="snippet-text">"Apple"</span>,
+	<span class="snippet-text">"Banana"</span>, <span class="snippet-condition">
+	False</span>, <span class="snippet-number">10</span>,
+	<span class="snippet-condition">False</span>}<br>
+	theset.remove(<span class="snippet-number">10</span>)<br>
+	<span class="snippet-keyword">print</span>(theset)<br></span>
+<div class="container"><a href="https://trinket.io/python/07045e512e?showInstructions=true" target="_blank" class="button">Try it out!</a></div></div>
+
+<p>You can also use the <span class="highlight">pop()</span> method to remove the last item in the set.<br>However, since sets are unordered, you will not know which item has been removed.</p>
+<div class="example"><h1>Example</h1><span class="snippet">theset = {<span class="snippet-text">"Apple"</span>,
+	<span class="snippet-text">"Banana"</span>, <span class="snippet-condition">
+	False</span>, <span class="snippet-number">10</span>,
+	<span class="snippet-condition">False</span>}<br>
+	theset.pop()<br>
+	<span class="snippet-keyword">print</span>(theset)<br></span>
+<div class="container"><a href="https://trinket.io/python/50199789ab?showInstructions=true" target="_blank" class="button">Try it out!</a></div></div>
+
+
+<script type="text/javascript">
+function enlarge(elmnt, imgTag) {
+	var x = document.getElementById(elmnt);
+	if (x.style.display === "none") {
+
+		x.style.display = "block";
+		imgTag.src = "up_arrow.png";
+  	}
+  	else{
+
+  		x.style.display = "none";
+  		imgTag.src = "down_arrow.png";
+  	}
+}
+</script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,336 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+<title>Lists</title>
+<link href="stylesheet.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+	<div class="upper-index">
+	    <span class="logo" style="width: 50%; display: inline; align-items: center; margin-left: 5px"><img src="logo.png" width="50px" style="margin-top: 5px"></span>
+	    <span class="upper-index-all-hrefs"><a href="CodingForBeginners.html" class="upper-index-a">Home</a><a href="contact.html" class="upper-index-a">Contact</a><a href="forums.php" class="upper-index-a">Forums</a><a href="login.php" class="upper-index-a btn btn-primary" style="background-color: #0cf">Login</a><a href="registration.php" class="upper-index-a btn btn-primary" style="background-color: #fff; color: #008fb3">Register</a></span>
+	</div>
+<div class="left-index"><a class="left-index-a" href="Intro_to_python.html">Intro to python</a><br><a class="left-index-a" href="Python.html">Get started</a><br><a class="left-index-a" href="Comments.html">Comments</a><br><a class="left-index-a" href="Variabes.html">Data types and Variables</a><br><a class="left-index-a" href="input.html">Input</a><br><a class="left-index-a" href="numbers.html">Numbers</a><br><a class="left-index-a" href="strings.html">Strings</a><br><a class="left-index-a" href="boolean.html">Boolean</a><br><a class="left-index-a" href="">Operators(Soon)</a><br><a class="left-index-a" href="if-statement.html">If statements</a><br><a class="left-index-a" href="lists.html">Lists</a><br><a class="left-index-a" href="tuples.html">Tuples</a><br><a class="left-index-a" href="sets.html">Sets</a><br><a class="left-index-a" href="">Dictionaries(soon)</a><br><a class="left-index-a" href="while_loop.html">While loop</a><br><a class="left-index-a" href="for_loop.html">For loop</a><br><a class="left-index-a" href="functions.html">Functions</a><br><a class="left-index-a" href="">Classes/Objects(Soon)</a><br><a class="left-index-a" href="">Inheritance(Soon)</a><br><a class="left-index-a" href="">Scope(Soon)</a><br><a class="left-index-a" href="">Try-except(Soon)</a><br><br></div>
+
+<h1>Lists</h1>
+<p>Lists store several items in a single variable. </p>
+<p>Lists use square brackets - []</p>
+<p>They can store several data types. </p>
+<p>They can even be duplicate values</p>
+<div class="example"><h1>Example</h1><span class="snippet">l = [<span class="snippet-text">"English"</span>,
+	<span class="snippet-text">"Mathematics"</span>,
+	<span class="snippet-number">500</span>, <span class="snippet-condition">
+	True</span>, <span class="snippet-text">"Economics"</span>,
+	<span class="snippet-condition">True</span>]<br>
+	<span class="snippet-keyword">print</span>(l)<br></span>
+<div class="container"><a href="https://trinket.io/python/0ea41b6a83?showInstructions=true" target="_blank" class="button">Try it out!</a></div></div>
+<hr>
+<h1>Length of A List</h1>
+<p>You can find out the number of items in a list using the <span class="highlight">len()</span> function</p>
+<div class="example"><h1>Example</h1><span class="snippet">l = [<span class="snippet-text">"English"</span>,
+	<span class="snippet-text">"Mathematics"</span>,
+	<span class="snippet-number">500</span>, <span class="snippet-condition">
+	True</span>, <span class="snippet-text">"Economics"</span>,
+	<span class="snippet-condition">True</span>]<br>
+	<span class="snippet-keyword">print</span>(<span class="snippet-keyword">len</span>(l))<br></span>
+<div class="container"><a href="https://trinket.io/python/e31bd15467?showInstructions=true" target="_blank" class="button">Try it out!</a></div></div>
+
+<h1>List Constructor</h1>
+<p>Instead of using the square brackets, you can also use the <span class="highlight">list()</span> constructor to create a new list</p>
+<div class="example"><h1>Example</h1><span class="snippet">l =
+	<span class="snippet-keyword">list</span>((<span class="snippet-text">"English"</span>,
+	<span class="snippet-text">"Mathematics"</span>,
+	<span class="snippet-number">500</span>, <span class="snippet-condition">
+	True</span>, <span class="snippet-text">"Economics"</span>,
+	<span class="snippet-condition">True</span>)) <span class="snippet-text">
+	#Note the double Round brackets</span><br>
+	<span class="snippet-keyword">print</span>(l[<span class="snippet-number">4</span>],
+	l[<span class="snippet-number">-2</span>])<br></span>
+<div class="container"><a href="https://trinket.io/python/18d1f90660?showInstructions=true" target="_blank" class="button">Try it out!</a></div></div>
+
+<h1>Count method</h1>
+<p>you can count the number of occurences of an item in the list.</p>
+<div class="example"><h1>Example</h1><span class="snippet">l =
+	[<span class="snippet-text">"English"</span>,
+	<span class="snippet-text">"Mathematics"</span>,
+	<span class="snippet-number">500</span>, <span class="snippet-condition">
+	True</span>, <span class="snippet-text">"Economics"</span>,
+	<span class="snippet-condition">True</span>]<br>
+	<span class="snippet-keyword">print</span>(l.<span class="snippet-keyword">count</span>(<span class="snippet-condition">True</span>))<br></span>
+<div class="container"><a href="https://trinket.io/python/2920a72a54?showInstructions=true" target="_blank" class="button">Try it out!</a></div></div>
+
+
+<h1>Indexing</h1>
+<p>List items are numbered. For example, the first item in the list has been given a number(index) and so on.</p>
+<p>The first item is given the index [0]. The second item is [1] etc.</p>
+<p>You access the list item using the following syntax: </p>
+<div class="example"><h1>Example</h1><span class="snippet">l = [<span class="snippet-text">"English"</span>,
+	<span class="snippet-text">"Mathematics"</span>,
+	<span class="snippet-number">500</span>, <span class="snippet-condition">
+	True</span>, <span class="snippet-text">"Economics"</span>,
+	<span class="snippet-condition">True</span>]<br>
+	<span class="snippet-keyword">print</span>(l[<span class="snippet-number">0</span>],
+	l[<span class="snippet-number">3</span>])<br></span>
+<div class="container"><a href="https://trinket.io/python/fd6968633a?showInstructions=true" target="_blank" class="button">Try it out!</a></div></div>
+
+<h3 style="font-family:sans-serif">Negative indexing</h3>
+<p>Python also has negative indexes - [-1], [-2] etc.</p>
+<p>[-1] refers to the last item in the list. [-2], the second last item and so on.</p>
+<div class="example"><h1>Example</h1><span class="snippet">l = [<span class="snippet-text">"English"</span>,
+	<span class="snippet-text">"Mathematics"</span>,
+	<span class="snippet-number">500</span>, <span class="snippet-condition">
+	True</span>, <span class="snippet-text">"Economics"</span>,
+	<span class="snippet-condition">True</span>]<br>
+	<span class="snippet-keyword">print</span>(l[<span class="snippet-number">4</span>],
+	l[<span class="snippet-number">-2</span>])<br></span>
+<div class="container"><a href="https://trinket.io/python/ba247aae1f?showInstructions=true" target="_blank" class="button">Try it out!</a></div></div>
+
+<h3 style="font-family:sans-serif">Range of Indexes</h3>
+<p>You can print several items from the list by asking to print a range of indexes(start to end)</p>
+<div class="example"><h1>Example</h1><span class="snippet">l = [<span class="snippet-text">"English"</span>,
+	<span class="snippet-text">"Mathematics"</span>,
+	<span class="snippet-number">500</span>, <span class="snippet-condition">
+	True</span>, <span class="snippet-text">"Economics"</span>,
+	<span class="snippet-condition">True</span>]<br>
+	<span class="snippet-keyword">print</span>(l[<span class="snippet-number">1</span>:<span class="snippet-number">4</span>])<br></span>
+<div class="container"><a href="https://trinket.io/python/6c0dbc717b?showInstructions=true" target="_blank" class="button">Try it out!</a></div></div>
+
+
+<div class="note" style="padding:10px">
+<h1 style="display:inline; margin-bottom:0px">Note</h1>
+<button type="button" onclick="enlarge('enlarger', this.firstChild)" style="border-style: none; border-color: inherit; border-width: 0; background: transparent; display:inline-block; width: 40px; float:right"><img src="down_arrow.png" alt="Enlarge and Capsize Note" height="30px"></button>
+
+<div id="enlarger" style="display:none">
+
+<div class="note-text">While using a range of indexes, the starting index(<span class="highlight-note">[1]</span> in this case) is included, but the ending index is excluded.</div></div></div>
+
+<p>You can not include the starting index value to start the range from the first item in the list.</p>
+<div class="example"><h1>Example</h1><span class="snippet">l = [<span class="snippet-text">"English"</span>,
+	<span class="snippet-text">"Mathematics"</span>,
+	<span class="snippet-number">500</span>, <span class="snippet-condition">
+	True</span>, <span class="snippet-text">"Economics"</span>,
+	<span class="snippet-condition">True</span>]<br>
+	<span class="snippet-keyword">print</span>(l[:<span class="snippet-number">4</span>])<br></span>
+<div class="container"><a href="https://trinket.io/python/ca15caa01e?showInstructions=true" target="_blank" class="button">Try it out!</a></div></div>
+
+<p>By not including the ending index value, the range ends at the last item in the list.</p>
+<div class="example"><h1>Example</h1><span class="snippet">l = [<span class="snippet-text">"English"</span>,
+	<span class="snippet-text">"Mathematics"</span>,
+	<span class="snippet-number">500</span>, <span class="snippet-condition">
+	True</span>, <span class="snippet-text">"Economics"</span>,
+	<span class="snippet-condition">True</span>]<br>
+	<span class="snippet-keyword">print</span>(l[<span class="snippet-number">2</span>:])<br></span>
+<div class="container"><a href="https://trinket.io/python/96aea3728d?showInstructions=true" target="_blank" class="button">Try it out!</a></div></div>
+
+<p>You can also skip an index(for example, to print only the 1st, 3rd, 5th etc. items in the list) by stepping the list by
+<span class="snippet-number">2</span></p>
+<p>To do that, the syntax is: </p>
+<div class="example"><h1>Example</h1><span class="snippet">l = [<span class="snippet-text">"English"</span>,
+	<span class="snippet-text">"Mathematics"</span>,
+	<span class="snippet-number">500</span>, <span class="snippet-condition">
+	True</span>, <span class="snippet-text">"Economics"</span>,
+	<span class="snippet-condition">True</span>]<br>
+	<span class="snippet-keyword">print</span>(l[::<span class="snippet-number">2</span>])<br></span>
+<div class="container"><a href="https://trinket.io/python/5b730a53a9?showInstructions=true" target="_blank" class="button">Try it out!</a></div></div>
+
+<h1>Index Method</h1>
+<p>You can come to know the index at which an item is at, using the <span class="highlight">index</span> method</p>
+<div class="example"><h1>Example</h1><span class="snippet">l = [<span class="snippet-text">"English"</span>,
+	<span class="snippet-text">"Mathematics"</span>,
+	<span class="snippet-number">500</span>, <span class="snippet-condition">
+	True</span>, <span class="snippet-text">"Economics"</span>,
+	<span class="snippet-condition">True</span>]<br>
+	<span class="snippet-keyword">print</span>(l.index(<span class="snippet-condition">True</span>))<br></span>
+<div class="container"><a href="https://trinket.io/python/8f1da7c73f?showInstructions=true" target="_blank" class="button">Try it out!</a></div></div>
+
+
+<div class="note" style="padding:10px">
+<h1 style="display:inline; margin-bottom:0px">Note</h1>
+<button type="button" onclick="enlarge('enlarger1', this.firstChild)" style="border-style: none; border-color: inherit; border-width: 0; background: transparent; display:inline-block; width: 40px; float:right"><img src="down_arrow.png" alt="Enlarge and Capsize Note" height="30px"></button>
+
+<div id="enlarger1" style="display:none">
+
+<div class="note-text">It only gives the index of the first occurence of the value needed.</div></div></div>
+
+
+<h1>Change List Items</h1>
+<p>It is possible to change specific list items using their index value.</p>
+<div class="example"><h1>Example</h1><span class="snippet">l = [<span class="snippet-text">"English"</span>,
+	<span class="snippet-text">"Mathematics"</span>,
+	<span class="snippet-number">500</span>, <span class="snippet-condition">
+	True</span>, <span class="snippet-text">"Economics"</span>,
+	<span class="snippet-condition">True</span>]<br>
+	l[<span class="snippet-number">1</span>] = <span class="snippet-text">
+	"Physics"</span><br><span class="snippet-keyword">print</span>(l)</span><div class="container"><a href="https://trinket.io/python/b4480c8352?showInstructions=true" target="_blank" class="button">Try it out!</a></div></div>
+
+<h3 style="font-family:sans-serif">Change a range of indexes</h3>
+<p>You can also change a specific range of list items.</p>
+<div class="example"><h1>Example</h1><span class="snippet">l = [<span class="snippet-text">"English"</span>,
+	<span class="snippet-text">"Mathematics"</span>,
+	<span class="snippet-number">500</span>, <span class="snippet-condition">
+	True</span>, <span class="snippet-text">"Economics"</span>,
+	<span class="snippet-condition">True</span>]<br>
+	l[<span class="snippet-number">1</span>:<span class="snippet-number">4</span>] =
+	[<span class="snippet-text">"Physics"</span>, <span class="snippet-number">
+	200</span>,
+	<span class="snippet-condition">False</span>]<br><span class="snippet-keyword">print</span>(l)</span>
+<div class="container"><a href="https://trinket.io/python/d27dec4ec4?showInstructions=true" target="_blank" class="button">Try it out!</a></div></div>
+
+<p>Remember, the ending index value is excluded</p>
+<br>
+<p>If you enter more items than you intended to replace, then the items will be inserted without any replacement of the other items and the other items will also move.<br>This also means that the lenght of the list will change.</p>
+<div class="example"><h1>Example</h1><span class="snippet">l = [<span class="snippet-text">"English"</span>,
+	<span class="snippet-text">"Mathematics"</span>,
+	<span class="snippet-number">500</span>, <span class="snippet-condition">
+	True</span>, <span class="snippet-text">"Economics"</span>,
+	<span class="snippet-condition">True</span>]<br>
+	l[<span class="snippet-number">1</span>:<span class="snippet-number">2</span>] =
+	[<span class="snippet-text">"Physics"</span>, <span class="snippet-number">
+	200</span>,
+	<span class="snippet-condition">False</span>]<br><span class="snippet-keyword">print</span>(l)</span>
+<div class="container"><a href="https://trinket.io/python/264fd11896?showInstructions=true" target="_blank" class="button">Try it out!</a></div></div>
+
+<p>If you enter less items than you intended to replace, then the other items included in the range, but not replaced will be removed.<br>This will change the length of the list.</p>
+<div class="example"><h1>Example</h1><span class="snippet">l = [<span class="snippet-text">"English"</span>,
+	<span class="snippet-text">"Mathematics"</span>,
+	<span class="snippet-number">500</span>, <span class="snippet-condition">
+	True</span>, <span class="snippet-text">"Economics"</span>,
+	<span class="snippet-condition">True</span>]<br>
+	l[<span class="snippet-number">1</span>:<span class="snippet-number">5</span>] =
+	[<span class="snippet-text">"Physics"</span>]<br><span class="snippet-keyword">print</span>(l)</span>
+<div class="container"><a href="https://trinket.io/python/48fd9f35bd?showInstructions=true" target="_blank" class="button">Try it out!</a></div></div>
+
+<h1>Append Method</h1>
+<p>You can add elements to the end of your list by using the <span class="highlight">append</span> method</p>
+
+<div class="example"><h1>Example</h1><span class="snippet">l = [<span class="snippet-text">"English"</span>,
+	<span class="snippet-text">"Mathematics"</span>,
+	<span class="snippet-number">500</span>, <span class="snippet-condition">
+	True</span>, <span class="snippet-text">"Economics"</span>,
+	<span class="snippet-condition">True</span>]<br>l.<span class="snippet-keyword">append</span>(<span class="snippet-text">"Physics"</span>)<br>
+	<span class="snippet-keyword">print</span>(l)</span>
+<div class="container"><a href="https://trinket.io/python/2ce303cc68?showInstructions=true" target="_blank" class="button">Try it out!</a></div></div>
+
+<h1>Insert method</h1>
+<p>You can add elements to your desired index value using the <span class="highlight">insert</span> method<br>This would change the length of a string</p>
+<div class="example"><h1>Example</h1><span class="snippet">l = [<span class="snippet-text">"English"</span>,
+	<span class="snippet-text">"Mathematics"</span>,
+	<span class="snippet-number">500</span>, <span class="snippet-condition">
+	True</span>, <span class="snippet-text">"Economics"</span>,
+	<span class="snippet-condition">True</span>]<br>l.<span class="snippet-keyword">insert</span>(1,
+	<span class="snippet-text">"Physics"</span>)<br>
+	<span class="snippet-keyword">print</span>(l)</span>
+<div class="container"><a href="https://trinket.io/python/57c695e182?showInstructions=true" target="_blank" class="button">Try it out!</a></div></div>
+
+<h1>Extend method</h1>
+<p>You can use the extend method to add any iterable object including lists, tuples, dictionaries, sets etc. The last three will be covered later.</p>
+<div class="example"><h1>Example</h1><span class="snippet">l = [<span class="snippet-text">"English"</span>,
+	<span class="snippet-text">"Mathematics"</span>,
+	<span class="snippet-number">500</span>, <span class="snippet-condition">
+	True</span>, <span class="snippet-text">"Economics"</span>,
+	<span class="snippet-condition">True</span>]<br>fruits = [<span class="snippet-text">"Apple"</span>,
+	<span class="snippet-text">"Banana"</span>]<br>l.<span class="snippet-keyword">extend</span>(fruits)<br>
+	<span class="snippet-keyword">print</span>(l)</span>
+<div class="container"><a href="https://trinket.io/python/aea87348e4?showInstructions=true" target="_blank" class="button">Try it out!</a></div></div>
+
+<h1>Remove method</h1>
+<p>You can remove whichever item from the list you want using the <span class="highlight">remove</span> method</p>
+<div class="example"><h1>Example</h1><span class="snippet">l = [<span class="snippet-text">"English"</span>,
+	<span class="snippet-text">"Mathematics"</span>,
+	<span class="snippet-number">500</span>, <span class="snippet-condition">
+	True</span>, <span class="snippet-text">"Economics"</span>,
+	<span class="snippet-condition">True</span>]<br>l.<span class="snippet-keyword">remove</span>(<span class="snippet-condition">True</span>)<br>
+	<span class="snippet-keyword">print</span>(l)</span>
+<div class="container"><a href="https://trinket.io/python/e555c1f7a8?showInstructions=true" target="_blank" class="button">Try it out!</a></div></div>
+
+<div class="note" style="padding:10px">
+<h1 style="display:inline; margin-bottom:0px">Note</h1>
+<button type="button" onclick="enlarge('enlarger2', this.firstChild)" style="border-style: none; border-color: inherit; border-width: 0; background: transparent; display:inline-block; width: 40px; float:right"><img src="down_arrow.png" alt="Enlarge and Capsize Note" height="30px"></button>
+
+<div id="enlarger2" style="display:none">
+
+<div class="note-text">It only removes the first occurence of the item that needs to be removed</div></div></div>
+
+<h1>Pop method</h1>
+<p>The <span class="highlight">pop</span> method removes an item from the list at the specified index.</p>
+<div class="example"><h1>Example</h1><span class="snippet">l = [<span class="snippet-text">"English"</span>,
+	<span class="snippet-text">"Mathematics"</span>,
+	<span class="snippet-number">500</span>, <span class="snippet-condition">
+	True</span>, <span class="snippet-text">"Economics"</span>,
+	<span class="snippet-condition">True</span>]<br>l.<span class="snippet-keyword">pop</span>(<span class="snippet-number">3</span>)<br>
+	<span class="snippet-keyword">print</span>(l)</span>
+<div class="container"><a href="https://trinket.io/python/33736e5d65?showInstructions=true" target="_blank" class="button">Try it out!</a></div></div>
+
+<div class="note" style="padding:10px">
+<h1 style="display:inline; margin-bottom:0px">Note</h1>
+<button type="button" onclick="enlarge('enlarger3', this.firstChild)" style="border-style: none; border-color: inherit; border-width: 0; background: transparent; display:inline-block; width: 40px; float:right"><img src="down_arrow.png" alt="Enlarge and Capsize Note" height="30px"></button>
+
+<div id="enlarger3" style="display:none">
+
+<div class="note-text">If no index value is specified in the pop method, it will remove the last item in the list by default.</div></div></div>
+
+<p>The <span class="highlight">del</span> keyword can also delete items at a certain index or the list itself</p>
+<div class="example"><h1>Example</h1><span class="snippet">l = [<span class="snippet-text">"English"</span>,
+	<span class="snippet-text">"Mathematics"</span>,
+	<span class="snippet-number">500</span>, <span class="snippet-condition">
+	True</span>, <span class="snippet-text">"Economics"</span>,
+	<span class="snippet-condition">True</span>]<br>thelist = [<span class="snippet-text">"Apple"</span>,
+	<span class="snippet-text">"Mango"</span>, <span class="snippet-number">10</span>]<br>
+	<span class="snippet-condition">del</span>(l[<span class="snippet-number">1</span>])<br>
+	<span class="snippet-condition">del</span>(thelist) <span class="snippet-text">
+	#Will give an error while trying to print because it has been deleted</span><br>
+	<span class="snippet-keyword">print</span>(l)<br>
+	<span class="snippet-keyword">print</span>(thelist)</span>
+<div class="container"><a href="https://trinket.io/python/0163b4628f?showInstructions=true" target="_blank" class="button">Try it out!</a></div></div>
+
+<h1>Clear method</h1>
+<p>Using the <span class="highlight">clear</span> method, the entire list can be emptied. That is, the list is not deleted, but it is just has no items in it.</p>
+<div class="example"><h1>Example</h1><span class="snippet">l = [<span class="snippet-text">"English"</span>,
+	<span class="snippet-text">"Mathematics"</span>,
+	<span class="snippet-number">500</span>, <span class="snippet-condition">
+	True</span>, <span class="snippet-text">"Economics"</span>,
+	<span class="snippet-condition">True</span>]<br>l.<span class="snippet-keyword">clear</span>()<br>
+	<span class="snippet-keyword">print</span>(l)</span>
+<div class="container"><a href="https://trinket.io/python/0833eebd67?showInstructions=true" target="_blank" class="button">Try it out!</a></div></div>
+
+<h1>Sort method</h1>
+<p>The <span class="highlight">sort</span> method can sort the list by ascending order by default. It works for numbers and strings</p>
+<div class="example"><h1>Example</h1><span class="snippet">l = [<span class="snippet-text">"English"</span>,
+	<span class="snippet-text">"Mathematics"</span>,
+	<span class="snippet-text">"Economics"</span>,
+	<span class="snippet-text">"Physics"</span>]<br>l.<span class="snippet-keyword">sort</span>()<br>
+	<span class="snippet-keyword">print</span>(l)</span>
+<div class="container"><a href="https://trinket.io/python/2a028bebc1?showInstructions=true" target="_blank" class="button">Try it out!</a></div></div>
+
+<p>You can also sort the list by descending order using the <span class="highlight">reverse</span> keywork</p>
+<div class="example"><h1>Example</h1><span class="snippet">l = [<span class="snippet-text">"English"</span>,
+	<span class="snippet-text">"Mathematics"</span>,
+	<span class="snippet-text">"Economics"</span>,
+	<span class="snippet-text">"Physics"</span>]<br>l.<span class="snippet-keyword">sort</span>(reverse
+	= <span class="snippet-condition">True</span>)<br>
+	<span class="snippet-keyword">print</span>(l)</span>
+<div class="container"><a href="https://trinket.io/python/7d851d1f87?showInstructions=true" target="_blank" class="button">Try it out!</a></div></div>
+
+
+<script type="text/javascript">
+function enlarge(elmnt, imgTag) {
+	var x = document.getElementById(elmnt);
+	if (x.style.display === "none") {
+
+		x.style.display = "block";
+		imgTag.src = "up_arrow.png";
+  	}
+  	else{
+
+  		x.style.display = "none";
+  		imgTag.src = "down_arrow.png";
+  	}
+}
+
+</script>
+
+</body>
+
+</html>

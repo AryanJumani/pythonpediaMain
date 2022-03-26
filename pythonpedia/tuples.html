@@ -1,0 +1,116 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+<title>Tuples</title>
+<link href="stylesheet.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+	<div class="upper-index">
+	    <span class="logo" style="width: 50%; display: inline; align-items: center; margin-left: 5px"><img src="logo.png" width="50px" style="margin-top: 5px"></span>
+	    <span class="upper-index-all-hrefs"><a href="CodingForBeginners.html" class="upper-index-a">Home</a><a href="contact.html" class="upper-index-a">Contact</a><a href="forums.php" class="upper-index-a">Forums</a><a href="login.php" class="upper-index-a btn btn-primary" style="background-color: #0cf">Login</a><a href="registration.php" class="upper-index-a btn btn-primary" style="background-color: #fff; color: #008fb3">Register</a></span>
+	</div>
+<div class="left-index"><a class="left-index-a" href="Intro_to_python.html">Intro to python</a><br><a class="left-index-a" href="Python.html">Get started</a><br><a class="left-index-a" href="Comments.html">Comments</a><br><a class="left-index-a" href="Variabes.html">Data types and Variables</a><br><a class="left-index-a" href="input.html">Input</a><br><a class="left-index-a" href="numbers.html">Numbers</a><br><a class="left-index-a" href="strings.html">Strings</a><br><a class="left-index-a" href="boolean.html">Boolean</a><br><a class="left-index-a" href="">Operators(Soon)</a><br><a class="left-index-a" href="if-statement.html">If statements</a><br><a class="left-index-a" href="lists.html">Lists</a><br><a class="left-index-a" href="tuples.html">Tuples</a><br><a class="left-index-a" href="sets.html">Sets</a><br><a class="left-index-a" href="">Dictionaries(soon)</a><br><a class="left-index-a" href="while_loop.html">While loop</a><br><a class="left-index-a" href="for_loop.html">For loop</a><br><a class="left-index-a" href="functions.html">Functions</a><br><a class="left-index-a" href="">Classes/Objects(Soon)</a><br><a class="left-index-a" href="">Inheritance(Soon)</a><br><a class="left-index-a" href="">Scope(Soon)</a><br><a class="left-index-a" href="">Try-except(Soon)</a><br><br></div>
+
+<h1>Tuples</h1>
+<p>Just like lists, tuples store multiple items in a single variable</p>
+<p>The only difference between a tuple and a list is that lists can be changed while tuples are unchangeable.</p>
+<p>There is also a slight syntax difference while creating tuples.</p>
+<p>They start and end with round brackets instead of square brackets</p>
+<div class="example"><h1>Example</h1><span class="snippet">thetuple = (<span class="snippet-text">"Apple"</span>,
+	<span class="snippet-text">"Banana"</span>, <span class="snippet-condition">
+	False</span>,
+	<span class="snippet-number">10</span>)<br>
+	<span class="snippet-keyword">print</span>(thetuple)<br></span>
+<div class="container"><a href="https://trinket.io/python/6ccf4dd5ce?showInstructions=true" target="_blank" class="button">Try it out!</a></div></div>
+
+<p>They can be accessed the same way as a list since all items are ordered. That is, each item has an index and can be accessed using it.</p>
+<h1>Tuple to List and back</h1>
+<p>Since tuples cannot be changed(immutable), the only way to do so is to convert the tuple into a list, change the list and then convert it back into a tuple.</p>
+<div class="example"><h1>Example</h1><span class="snippet">thetuple = (<span class="snippet-text">"Apple"</span>,
+	<span class="snippet-text">"Banana"</span>, <span class="snippet-condition">
+	False</span>,
+	<span class="snippet-number">10</span>)<br>thelist =
+	<span class="snippet-keyword">list</span>(thetuple)<br>thelist[<span class="snippet-number">-1</span>]
+	= <span class="snippet-number">50</span><br>thetuple =
+	<span class="snippet-keyword">tuple</span>(thelist)<br>
+	<span class="snippet-keyword">print</span>(thetuple)<br></span>
+<div class="container"><a href="https://trinket.io/python/dd43777a30?showInstructions=true" target="_blank" class="button">Try it out!</a></div></div>
+
+<h1>Length of a tuple</h1>
+<p>Exactly like a list, the length of a tuple can be known the same way, that is, using the <span class="highlight">len()</span> function</p>
+<div class="example"><h1>Example</h1><span class="snippet">thetuple = (<span class="snippet-text">"Apple"</span>,
+	<span class="snippet-text">"Banana"</span>, <span class="snippet-condition">
+	False</span>,
+	<span class="snippet-number">10</span>)<br><span class="snippet-keyword">
+	print</span>(<span class="snippet-keyword">len</span>(thetuple))<br></span>
+<div class="container"><a href="https://trinket.io/python/ea0e2caf63?showInstructions=true" target="_blank" class="button">Try it out!</a></div></div>
+
+<h1>Count method</h1>
+<p>You can count the number of occurences of an item in the list.</p>
+<div class="example"><h1>Example</h1><span class="snippet">thetuple = (<span class="snippet-text">"Apple"</span>,
+	<span class="snippet-text">"Banana"</span>, <span class="snippet-condition">
+	False</span>,
+	<span class="snippet-number">10</span>)<br>
+	<span class="snippet-keyword">print</span>(thetuple.<span class="snippet-keyword">count</span>(<span class="snippet-condition">False</span>))<br></span>
+<div class="container"><a href="https://trinket.io/python/d4698c6ea3?showInstructions=true" target="_blank" class="button">Try it out!</a></div></div>
+
+<h1>Index Method</h1>
+<p>You can come to know the index at which an item is at, using the <span class="highlight">index</span> method</p>
+<div class="example"><h1>Example</h1><span class="snippet">thetuple = (<span class="snippet-text">"Apple"</span>,
+	<span class="snippet-text">"Banana"</span>, <span class="snippet-condition">
+	False</span>,
+	<span class="snippet-number">10</span>)<br>
+	<span class="snippet-keyword">print</span>(thetuple.index(<span class="snippet-condition">False</span>))<br></span>
+<div class="container"><a href="https://trinket.io/python/a28cb61c4d?showInstructions=true" target="_blank" class="button">Try it out!</a></div></div>
+
+
+<div class="note" style="padding:10px">
+<h1 style="display:inline; margin-bottom:0px">Note</h1>
+<button type="button" onclick="enlarge('enlarger', this.firstChild)" style="border-style: none; border-color: inherit; border-width: 0; background: transparent; display:inline-block; width: 40px; float:right"><img src="down_arrow.png" alt="Enlarge and Capsize Note" height="30px"></button>
+
+<div id="enlarger" style="display:none">
+
+<div class="note-text">It only gives the index of the first occurence of the value needed.</div></div></div>
+
+<h1>Unpacking A Tuple</h1>
+<p>While creating a tuple, we assign values to one integer. This is known as "packin" a tuple.
+<br>
+But, in python we can also "unpack" a tuple. Which is, assigning variable to each of the items in the tuple.
+</p>
+<div class="example"><h1>Example</h1><span class="snippet">thetuple = (<span class="snippet-text">"Apple"</span>,
+	<span class="snippet-text">"Banana"</span>, <span class="snippet-condition">
+	False</span>,
+	<span class="snippet-number">10</span>)<br>
+	(fruit1, fruit2, boolean, number) = thetuple<br>
+	<span class="snippet-keyword">print</span>(fruit1)<br>
+	<span class="snippet-keyword">print</span>(fruit2)<br>
+	<span class="snippet-keyword">print</span>(boolean)<br>
+	<span class="snippet-keyword">print</span>(number)<br></span>
+<div class="container"><a href="https://trinket.io/python/bf48c0a91b?showInstructions=true" target="_blank" class="button">Try it out!</a></div></div>
+
+
+
+
+
+<script type="text/javascript">
+function enlarge(elmnt, imgTag) {
+	var x = document.getElementById(elmnt);
+	if (x.style.display === "none") {
+
+		x.style.display = "block";
+		imgTag.src = "up_arrow.png";
+  	}
+  	else{
+
+  		x.style.display = "none";
+  		imgTag.src = "down_arrow.png";
+  	}
+}
+</script>
+
+</body>
+
+</html>

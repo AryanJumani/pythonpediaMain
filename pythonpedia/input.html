@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+<title>Input Statements</title>
+<link href="stylesheet.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+	<div class="upper-index">
+	    <span class="logo" style="width: 50%; display: inline; align-items: center; margin-left: 5px"><img src="logo.png" width="50px" style="margin-top: 5px"></span>
+	    <span class="upper-index-all-hrefs"><a href="CodingForBeginners.html" class="upper-index-a">Home</a><a href="contact.html" class="upper-index-a">Contact</a><a href="forums.php" class="upper-index-a">Forums</a><a href="login.php" class="upper-index-a btn btn-primary" style="background-color: #0cf">Login</a><a href="registration.php" class="upper-index-a btn btn-primary" style="background-color: #fff; color: #008fb3">Register</a></span>
+	</div>
+<div class="left-index"><a class="left-index-a" href="Intro_to_python.html">Intro to python</a><br><a class="left-index-a" href="Python.html">Get started</a><br><a class="left-index-a" href="Comments.html">Comments</a><br><a class="left-index-a" href="Variabes.html">Data types and Variables</a><br><a class="left-index-a" href="input.html">Input</a><br><a class="left-index-a" href="numbers.html">Numbers</a><br><a class="left-index-a" href="strings.html">Strings</a><br><a class="left-index-a" href="boolean.html">Boolean</a><br><a class="left-index-a" href="">Operators(Soon)</a><br><a class="left-index-a" href="if-statement.html">If statements</a><br><a class="left-index-a" href="lists.html">Lists</a><br><a class="left-index-a" href="tuples.html">Tuples</a><br><a class="left-index-a" href="sets.html">Sets</a><br><a class="left-index-a" href="">Dictionaries(soon)</a><br><a class="left-index-a" href="while_loop.html">While loop</a><br><a class="left-index-a" href="for_loop.html">For loop</a><br><a class="left-index-a" href="functions.html">Functions</a><br><a class="left-index-a" href="">Classes/Objects(Soon)</a><br><a class="left-index-a" href="">Inheritance(Soon)</a><br><a class="left-index-a" href="">Scope(Soon)</a><br><a class="left-index-a" href="">Try-except(Soon)</a><br><br></div>
+
+<h1>Input statement</h1>
+<p>To ask the user something, python takes an input from the user using the <span class="highlight">input</span> method</p>
+<p>We are going to use the string to integer conversion we learned earlier.</p>
+<div class="example"><h1>Example</h1><span class="snippet">a =
+	<span class="snippet-keyword">int</span>(<span class="snippet-keyword">input</span>(<span class="snippet-text">"Enter
+	a number: "</span>))<br><span class="snippet-keyword">print</span>(a)<br></span>
+<div class="container"><a href="https://trinket.io/python/cb8726a2ba?showInstructions=true" target="_blank" class="button">Try it out!</a></div></div>
+
+<h1>Multiple inputs on a single line</h1>
+<p>If you need to take multiple inputs in python on a single line, the <span class="highlight">map</span> function and the <span class="highlight">split</span> method allows you to do so</p>
+<p>Since the split method's default parameter is a space, the inputs will have to be separated by a space. You can also enter whatever parameter you want.</p>
+<p>If you want to know more about the <span class="highlight">strip</span> method, click <a href="https://www.w3schools.com/python/ref_string_strip.asp" target="_blank" style="color:inherit">here!</a></p>
+<div class="example"><h1>Example</h1><span class="snippet">a, b, c =
+	<span class="snippet-keyword">map</span>(<span class="snippet-keyword">int</span>,
+	<span class="snippet-keyword">input</span>(<span class="snippet-text">"Enter
+	3 numbers: "</span>).split())<br><span class="snippet-keyword">print</span>(a)<br>
+	<span class="snippet-keyword">print</span>(b)<br>
+	<span class="snippet-keyword">print</span>(C)<br></span>
+<div class="container"><a href="https://trinket.io/python/c5cc7c55bf?showInstructions=true" target="_blank" class="button">Try it out!</a></div></div>
+
+</body>
+
+</html>

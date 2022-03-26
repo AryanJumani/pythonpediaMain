@@ -1,0 +1,62 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+<title>Exercise 1</title>
+<link href="stylesheet.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+	<div class="upper-index">
+	    <span class="logo" style="width: 50%; display: inline; align-items: center; margin-left: 5px"><img src="logo.png" width="50px" style="margin-top: 5px"></span>
+	    <span class="upper-index-all-hrefs"><a href="CodingForBeginners.html" class="upper-index-a">Home</a><a href="contact.html" class="upper-index-a">Contact</a><a href="forums.php" class="upper-index-a">Forums</a><a href="login.php" class="upper-index-a btn btn-primary" style="background-color: #0cf">Login</a><a href="registration.php" class="upper-index-a btn btn-primary" style="background-color: #fff; color: #008fb3">Register</a></span>
+	</div>
+<div id="exercise" style="z-index:1; padding:10px">
+<h1>Exercise 1</h1>
+<p style="margin:5px auto 5px auto">Complete the command</p>
+<input type="text" spellcheck="false" maxlength="5" style="width:80px" id="answer1">("Hello World!")
+<p style="margin:5px auto 5px auto">Correct the syntax</p>
+<input type="text" spellcheck="false" style="width:200px" id="answer2" value='print("Hello World");'>
+<p style="margin:5px auto 5px auto">Celine forgot how to display her name in python, show her how to do so by printing her name!</p>
+<input type="text" spellcheck="false" style="width:200px" id="answer3">
+<br>
+<button onclick="submit()" class="button">Submit Answers!</button>
+</div>
+<div id="answers" style="z-index:0">
+<h1>Answers</h1>
+<p id="corrections"></p>
+<button onclick="retry()" class="button">Retry!</button>
+<button onclick="next()" class="button">Next Lesson!</button>
+</div>
+
+<script type="text/javascript">
+function submit(){
+	var x = document.getElementById("answer1");
+	var y = document.getElementById("exercise");
+	var z = document.getElementById("answer2");
+	var a = document.getElementById("answer3");
+	var b = document.getElementById("corrections");
+	y.style.display = "none";
+	document.getElementById("answers").style.display="block";
+	var count = 0;
+	if(x.value == "print"){
+		count+=1;
+	}
+	if(z.value == 'print("Hello World")'){
+		count+=1;
+	}
+	if(a.value == 'print("Celine")'){
+		count+=1;
+	}
+	b.innerHTML = "You got " + count + " correct and " + (3-count) + " wrong";
+}
+
+function retry(){
+	window.location.href="Exercise_1.html";
+}
+
+</script>
+</body>
+
+</html>
